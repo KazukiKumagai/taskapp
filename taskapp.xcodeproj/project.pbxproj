@@ -14,6 +14,7 @@
 		DA840BCC1E471B45002A895C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA840BCA1E471B45002A895C /* LaunchScreen.storyboard */; };
 		DA840BD71E471B45002A895C /* taskappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA840BD61E471B45002A895C /* taskappTests.swift */; };
 		DA840BE21E471B45002A895C /* taskappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA840BE11E471B45002A895C /* taskappUITests.swift */; };
+		DA840BF01E4724B2002A895C /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA840BEF1E4724B2002A895C /* InputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		DA840BDD1E471B45002A895C /* taskappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taskappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA840BE11E471B45002A895C /* taskappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskappUITests.swift; sourceTree = "<group>"; };
 		DA840BE31E471B45002A895C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA840BEF1E4724B2002A895C /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				DA840BC11E471B45002A895C /* AppDelegate.swift */,
 				DA840BC31E471B45002A895C /* ViewController.swift */,
 				DA840BC51E471B45002A895C /* Main.storyboard */,
+				DA840BEF1E4724B2002A895C /* InputViewController.swift */,
 				DA840BC81E471B45002A895C /* Assets.xcassets */,
 				DA840BCA1E471B45002A895C /* LaunchScreen.storyboard */,
 				DA840BCD1E471B45002A895C /* Info.plist */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA840BF01E4724B2002A895C /* InputViewController.swift in Sources */,
 				DA840BC41E471B45002A895C /* ViewController.swift in Sources */,
 				DA840BC21E471B45002A895C /* AppDelegate.swift in Sources */,
 			);
