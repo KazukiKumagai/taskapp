@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		96E1FC362982D2CFFAF8A38B /* Pods_taskapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25494A9CD806F7C9F6DD2C19 /* Pods_taskapp.framework */; };
-		DA83A8161E49DF3100E503BE /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA83A8141E49DF3100E503BE /* Realm.framework */; };
-		DA83A8171E49DF3100E503BE /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA83A8151E49DF3100E503BE /* RealmSwift.framework */; };
+		7B5C3558BAE4633ABC3EF8BE /* Pods_taskapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5746CC18A93A3628F27F2BEB /* Pods_taskapp.framework */; };
 		DA840BC21E471B45002A895C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA840BC11E471B45002A895C /* AppDelegate.swift */; };
 		DA840BC41E471B45002A895C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA840BC31E471B45002A895C /* ViewController.swift */; };
 		DA840BC71E471B45002A895C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA840BC51E471B45002A895C /* Main.storyboard */; };
@@ -18,6 +16,9 @@
 		DA840BD71E471B45002A895C /* taskappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA840BD61E471B45002A895C /* taskappTests.swift */; };
 		DA840BE21E471B45002A895C /* taskappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA840BE11E471B45002A895C /* taskappUITests.swift */; };
 		DA840BF01E4724B2002A895C /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA840BEF1E4724B2002A895C /* InputViewController.swift */; };
+		DAE001001E4ED37500FAC576 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE000FF1E4ED37500FAC576 /* Realm.framework */; };
+		DAE001021E4ED37D00FAC576 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE001011E4ED37D00FAC576 /* RealmSwift.framework */; };
+		DAE001061E4ED44800FAC576 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE001051E4ED44800FAC576 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,25 +39,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09AFAC8078C597F7C5548DD4 /* Pods-taskapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-taskapp/Pods-taskapp.debug.xcconfig"; sourceTree = "<group>"; };
-		25494A9CD806F7C9F6DD2C19 /* Pods_taskapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taskapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		37EAB381BF597295DEB583BF /* Pods-taskapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-taskapp/Pods-taskapp.release.xcconfig"; sourceTree = "<group>"; };
-		DA83A8141E49DF3100E503BE /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
-		DA83A8151E49DF3100E503BE /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
-		DA840BBE1E471B45002A895C /* taskapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taskapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C0CE4B8336E8033F15DF71B /* Pods-taskapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-taskapp/Pods-taskapp.release.xcconfig"; sourceTree = "<group>"; };
+		5746CC18A93A3628F27F2BEB /* Pods_taskapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taskapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7157F24140CC7276461B6FE0 /* Pods-taskapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-taskapp/Pods-taskapp.debug.xcconfig"; sourceTree = "<group>"; };
 		DA840BC11E471B45002A895C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA840BC31E471B45002A895C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA840BC61E471B45002A895C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA840BC81E471B45002A895C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA840BCB1E471B45002A895C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA840BCD1E471B45002A895C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA840BD21E471B45002A895C /* taskappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taskappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA840BD61E471B45002A895C /* taskappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskappTests.swift; sourceTree = "<group>"; };
 		DA840BD81E471B45002A895C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA840BDD1E471B45002A895C /* taskappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taskappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA840BE11E471B45002A895C /* taskappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskappUITests.swift; sourceTree = "<group>"; };
 		DA840BE31E471B45002A895C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA840BEF1E4724B2002A895C /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		DAE000FC1E4ED1EC00FAC576 /* taskapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taskapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE000FD1E4ED1EC00FAC576 /* taskappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taskappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE000FE1E4ED1EC00FAC576 /* taskappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taskappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE000FF1E4ED37500FAC576 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../../Library/Developer/Xcode/DerivedData/taskapp-aumyauahsbwgvrgogfwcinpbdifi/Build/Products/Debug-iphonesimulator/Realm/Realm.framework"; sourceTree = "<group>"; };
+		DAE001011E4ED37D00FAC576 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/taskapp-aumyauahsbwgvrgogfwcinpbdifi/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
+		DAE001051E4ED44800FAC576 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +66,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA83A8161E49DF3100E503BE /* Realm.framework in Frameworks */,
-				DA83A8171E49DF3100E503BE /* RealmSwift.framework in Frameworks */,
-				96E1FC362982D2CFFAF8A38B /* Pods_taskapp.framework in Frameworks */,
+				DAE001021E4ED37D00FAC576 /* RealmSwift.framework in Frameworks */,
+				DAE001001E4ED37500FAC576 /* Realm.framework in Frameworks */,
+				7B5C3558BAE4633ABC3EF8BE /* Pods_taskapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,12 +89,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94AC64370F5D1AFB2C714CA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7157F24140CC7276461B6FE0 /* Pods-taskapp.debug.xcconfig */,
+				3C0CE4B8336E8033F15DF71B /* Pods-taskapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C51C8CE9A06E4A521FE29F72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DA83A8141E49DF3100E503BE /* Realm.framework */,
-				DA83A8151E49DF3100E503BE /* RealmSwift.framework */,
-				25494A9CD806F7C9F6DD2C19 /* Pods_taskapp.framework */,
+				DAE001011E4ED37D00FAC576 /* RealmSwift.framework */,
+				DAE000FF1E4ED37500FAC576 /* Realm.framework */,
+				5746CC18A93A3628F27F2BEB /* Pods_taskapp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,20 +114,12 @@
 				DA840BC01E471B45002A895C /* taskapp */,
 				DA840BD51E471B45002A895C /* taskappTests */,
 				DA840BE01E471B45002A895C /* taskappUITests */,
-				DA840BBF1E471B45002A895C /* Products */,
-				ED5546123C15E63EDFDEFC44 /* Pods */,
 				C51C8CE9A06E4A521FE29F72 /* Frameworks */,
+				94AC64370F5D1AFB2C714CA6 /* Pods */,
+				DAE000FC1E4ED1EC00FAC576 /* taskapp.app */,
+				DAE000FD1E4ED1EC00FAC576 /* taskappTests.xctest */,
+				DAE000FE1E4ED1EC00FAC576 /* taskappUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		DA840BBF1E471B45002A895C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DA840BBE1E471B45002A895C /* taskapp.app */,
-				DA840BD21E471B45002A895C /* taskappTests.xctest */,
-				DA840BDD1E471B45002A895C /* taskappUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		DA840BC01E471B45002A895C /* taskapp */ = {
@@ -129,6 +132,7 @@
 				DA840BC81E471B45002A895C /* Assets.xcassets */,
 				DA840BCA1E471B45002A895C /* LaunchScreen.storyboard */,
 				DA840BCD1E471B45002A895C /* Info.plist */,
+				DAE001051E4ED44800FAC576 /* Task.swift */,
 			);
 			path = taskapp;
 			sourceTree = "<group>";
@@ -151,15 +155,6 @@
 			path = taskappUITests;
 			sourceTree = "<group>";
 		};
-		ED5546123C15E63EDFDEFC44 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				09AFAC8078C597F7C5548DD4 /* Pods-taskapp.debug.xcconfig */,
-				37EAB381BF597295DEB583BF /* Pods-taskapp.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,7 +175,7 @@
 			);
 			name = taskapp;
 			productName = taskapp;
-			productReference = DA840BBE1E471B45002A895C /* taskapp.app */;
+			productReference = DAE000FC1E4ED1EC00FAC576 /* taskapp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DA840BD11E471B45002A895C /* taskappTests */ = {
@@ -198,7 +193,7 @@
 			);
 			name = taskappTests;
 			productName = taskappTests;
-			productReference = DA840BD21E471B45002A895C /* taskappTests.xctest */;
+			productReference = DAE000FD1E4ED1EC00FAC576 /* taskappTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		DA840BDC1E471B45002A895C /* taskappUITests */ = {
@@ -216,7 +211,7 @@
 			);
 			name = taskappUITests;
 			productName = taskappUITests;
-			productReference = DA840BDD1E471B45002A895C /* taskappUITests.xctest */;
+			productReference = DAE000FE1E4ED1EC00FAC576 /* taskappUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -254,7 +249,7 @@
 				Base,
 			);
 			mainGroup = DA840BB51E471B45002A895C;
-			productRefGroup = DA840BBF1E471B45002A895C /* Products */;
+			productRefGroup = DA840BB51E471B45002A895C;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -345,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE001061E4ED44800FAC576 /* Task.swift in Sources */,
 				DA840BF01E4724B2002A895C /* InputViewController.swift in Sources */,
 				DA840BC41E471B45002A895C /* ViewController.swift in Sources */,
 				DA840BC21E471B45002A895C /* AppDelegate.swift in Sources */,
@@ -495,13 +491,14 @@
 		};
 		DA840BE71E471B45002A895C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09AFAC8078C597F7C5548DD4 /* Pods-taskapp.debug.xcconfig */;
+			baseConfigurationReference = 7157F24140CC7276461B6FE0 /* Pods-taskapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Realm",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/RealmSwift",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = taskapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -513,13 +510,14 @@
 		};
 		DA840BE81E471B45002A895C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37EAB381BF597295DEB583BF /* Pods-taskapp.release.xcconfig */;
+			baseConfigurationReference = 3C0CE4B8336E8033F15DF71B /* Pods-taskapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Realm",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/RealmSwift",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = taskapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
