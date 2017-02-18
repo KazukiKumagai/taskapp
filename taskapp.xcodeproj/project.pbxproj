@@ -19,6 +19,7 @@
 		DAE001001E4ED37500FAC576 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE000FF1E4ED37500FAC576 /* Realm.framework */; };
 		DAE001021E4ED37D00FAC576 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE001011E4ED37D00FAC576 /* RealmSwift.framework */; };
 		DAE001061E4ED44800FAC576 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE001051E4ED44800FAC576 /* Task.swift */; };
+		DAF4AAFF1E586E7600159F91 /* SCLAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF4AAFE1E586E7600159F91 /* SCLAlertView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		DAE000FF1E4ED37500FAC576 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../../Library/Developer/Xcode/DerivedData/taskapp-aumyauahsbwgvrgogfwcinpbdifi/Build/Products/Debug-iphonesimulator/Realm/Realm.framework"; sourceTree = "<group>"; };
 		DAE001011E4ED37D00FAC576 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/taskapp-aumyauahsbwgvrgogfwcinpbdifi/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
 		DAE001051E4ED44800FAC576 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		DAF4AAFE1E586E7600159F91 /* SCLAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCLAlertView.framework; path = "../../../Library/Developer/Xcode/DerivedData/taskapp-aumyauahsbwgvrgogfwcinpbdifi/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF4AAFF1E586E7600159F91 /* SCLAlertView.framework in Frameworks */,
 				DAE001021E4ED37D00FAC576 /* RealmSwift.framework in Frameworks */,
 				DAE001001E4ED37500FAC576 /* Realm.framework in Frameworks */,
 				7B5C3558BAE4633ABC3EF8BE /* Pods_taskapp.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		C51C8CE9A06E4A521FE29F72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DAF4AAFE1E586E7600159F91 /* SCLAlertView.framework */,
 				DAE001011E4ED37D00FAC576 /* RealmSwift.framework */,
 				DAE000FF1E4ED37500FAC576 /* Realm.framework */,
 				5746CC18A93A3628F27F2BEB /* Pods_taskapp.framework */,
@@ -226,6 +230,7 @@
 				TargetAttributes = {
 					DA840BBD1E471B45002A895C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UYHMQR2W46;
 						ProvisioningStyle = Automatic;
 					};
 					DA840BD11E471B45002A895C = {
@@ -494,6 +499,8 @@
 			baseConfigurationReference = 7157F24140CC7276461B6FE0 /* Pods-taskapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UYHMQR2W46;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Realm",
@@ -513,6 +520,8 @@
 			baseConfigurationReference = 3C0CE4B8336E8033F15DF71B /* Pods-taskapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UYHMQR2W46;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Realm",

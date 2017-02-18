@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 import UserNotifications
+import SCLAlertView
 
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
@@ -16,6 +17,9 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     let realm = try! Realm()
     let taskArray = try! Realm().objects(Task.self).sorted(byKeyPath: "date", ascending: false)
+    
+    var categoryFilter = ""
+    var categoryTaskArray:Results<Task>? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,15 +42,22 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     //UITableViewDataSourceプロトコルのメソッド
     //データの数を返すメソッド
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        if categoryFilter != ""{
+            return self.categoryTaskArray!.count
+        }
         return taskArray.count
     }
     
     //各セルの内容を返すメソッド
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        //質問
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath)
         
-        let task = taskArray[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath)
+        var task = Task()
+        if categoryFilter != ""{
+            task = categoryTaskArray![indexPath.row]
+        }else{
+            task = taskArray[indexPath.row]
+        }
         cell.textLabel?.text = task.title
         
         let formatter = DateFormatter()
@@ -54,7 +65,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         
         let dateString:String = formatter.string(from: task.date as Date)
         cell.detailTextLabel?.text = dateString
-        
+
         return cell
     }
     
@@ -111,4 +122,21 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
         }
     }
+    //カテゴリ検索用アラーム
+    @IBAction func categoryBarButton(_ sender: Any) {
+        let alert = SCLAlertView()
+        let inputCategory = alert.addTextField("Enter the category")
+        alert.addButton("Search") {
+            self.categoryFilter = inputCategory.text!
+            self.categoryTaskArray = self.realm.objects(Task.self).filter("category == %@", self.categoryFilter)
+            self.tableView.reloadData()
+        }
+        alert.showEdit("Edit View", subTitle: "This alert view shows a text box")
+    }
+    @IBAction func clearCategoryBarButton(_ sender: Any) {
+        self.categoryFilter = ""
+        self.tableView.reloadData()
+    }
+    
+    
 }

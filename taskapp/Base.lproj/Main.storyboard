@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -62,6 +63,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DoT-ce-tWD">
+                        <nil key="title"/>
+                        <leftBarButtonItems>
+                            <barButtonItem title="Category" id="TvT-4c-drD">
+                                <connections>
+                                    <action selector="categoryBarButton:" destination="BYZ-38-t0r" id="fXz-kh-xvs"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="ClearCategory" id="YS4-Wv-VBW">
+                                <connections>
+                                    <action selector="clearCategoryBarButton:" destination="BYZ-38-t0r" id="f0k-i4-aaL"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ANe-Lv-2Ws">
                             <connections>
                                 <segue destination="5ZZ-Cx-liv" kind="show" id="6Ux-mk-sqz"/>
@@ -126,15 +140,33 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カテゴリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEe-tG-vcx">
+                                <rect key="frame" x="16" y="436" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DBC-QB-hHx">
+                                <rect key="frame" x="16" y="467" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ujI-EE-nam" firstAttribute="top" secondItem="0fR-fD-FHb" secondAttribute="bottom" constant="10" id="14i-zR-Uf1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0fR-fD-FHb" secondAttribute="trailing" id="4pB-P8-bZ4"/>
+                            <constraint firstItem="DBC-QB-hHx" firstAttribute="top" secondItem="oEe-tG-vcx" secondAttribute="bottom" constant="10" id="5AK-lR-4r8"/>
                             <constraint firstItem="kxM-81-MRB" firstAttribute="leading" secondItem="PNZ-QQ-568" secondAttribute="leadingMargin" id="8zB-Q4-rtj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oEe-tG-vcx" secondAttribute="trailing" id="AEh-1g-W1J"/>
+                            <constraint firstItem="oEe-tG-vcx" firstAttribute="leading" secondItem="PNZ-QQ-568" secondAttribute="leadingMargin" id="Ce7-yN-kSp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ujI-EE-nam" secondAttribute="trailing" id="F2t-6d-DEF"/>
                             <constraint firstItem="ujI-EE-nam" firstAttribute="leading" secondItem="PNZ-QQ-568" secondAttribute="leadingMargin" id="HWX-He-ZRI"/>
+                            <constraint firstItem="DBC-QB-hHx" firstAttribute="leading" secondItem="PNZ-QQ-568" secondAttribute="leadingMargin" id="KyT-if-OFJ"/>
                             <constraint firstItem="KSD-2d-VZ4" firstAttribute="top" secondItem="Orp-2v-lOe" secondAttribute="bottom" constant="10" id="PFq-5o-8hK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DBC-QB-hHx" secondAttribute="trailing" id="YC6-sY-1bT"/>
+                            <constraint firstItem="oEe-tG-vcx" firstAttribute="top" secondItem="ujI-EE-nam" secondAttribute="bottom" constant="10" id="YZn-JH-xbg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="llu-Kq-8Z9" secondAttribute="trailing" id="aN6-h3-haI"/>
                             <constraint firstItem="0fR-fD-FHb" firstAttribute="leading" secondItem="PNZ-QQ-568" secondAttribute="leadingMargin" id="dC7-VY-QSI"/>
                             <constraint firstItem="kxM-81-MRB" firstAttribute="top" secondItem="llu-Kq-8Z9" secondAttribute="bottom" constant="10" id="jBg-xE-6XT"/>
@@ -145,6 +177,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryTextField" destination="DBC-QB-hHx" id="ni5-49-FHu"/>
                         <outlet property="contentsTextView" destination="0fR-fD-FHb" id="YSQ-LF-VPJ"/>
                         <outlet property="datePicker" destination="ujI-EE-nam" id="jiu-v0-JfN"/>
                         <outlet property="titleTextField" destination="llu-Kq-8Z9" id="MCg-FG-tbp"/>

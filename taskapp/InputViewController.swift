@@ -15,6 +15,7 @@ class InputViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var contentsTextView: UITextView!
     @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var categoryTextField: UITextField!
     
     var task: Task!
     let realm = try! Realm()
@@ -28,6 +29,7 @@ class InputViewController: UIViewController {
         titleTextField.text = task.title
         contentsTextView.text = task.contents
         datePicker.date = task.date as Date
+        categoryTextField.text = task.category
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -35,6 +37,7 @@ class InputViewController: UIViewController {
             self.task.title = self.titleTextField.text!
             self.task.contents = self.contentsTextView.text
             self.task.date = self.datePicker.date as NSDate
+            self.task.category = self.categoryTextField.text!
             self.realm.add(self.task, update: true)
         }
         setNotification(task: task)
@@ -59,6 +62,7 @@ class InputViewController: UIViewController {
         let content = UNMutableNotificationContent()
         content.title = task.title
         content.body  = task.contents       // bodyが空だと音しか出ない
+        content.categoryIdentifier = task.category
         content.sound = UNNotificationSound.default()
         
         // ローカル通知が発動するtrigger（日付マッチ）を作成
@@ -74,7 +78,6 @@ class InputViewController: UIViewController {
         center.add(request) { (error) in
             print(error)
         }
-        print("aaaa")
         
         // 未通知のローカル通知一覧をログ出力
         center.getPendingNotificationRequests { (requests: [UNNotificationRequest]) in
